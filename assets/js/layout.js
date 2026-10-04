@@ -30,14 +30,11 @@
     { id: "yhteystiedot", href: "yhteystiedot/", label: "Yhteystiedot" }
   ];
 
-  var LEAF =
-    '<svg viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3" ' +
-    'stroke-linecap="round" stroke-linejoin="round"><path d="M16 27C9 25 5.5 18.5 7 12.5 8.3 7.3 12.6 5.4 16 8.2 ' +
-    '19.4 5.4 23.7 7.3 25 12.5 26.5 18.5 23 25 16 27Z"/><path d="M16 30.5V11M16 21.5l-4.5-4M16 21.5l4.5-4M16 ' +
-    '15.5l-3.5-3M16 15.5l3.5-3"/></svg>';
+  /* Official ELV logo (assets/img/logo.svg, from "ELV logo lippu.svg") */
+  var LOGO = '<img class="brand__logo" src="' + root + 'assets/img/logo.svg" alt="" width="40" height="42">';
 
   var BRAND =
-    '<a class="brand" href="' + home + '">' + LEAF +
+    '<a class="brand" href="' + home + '">' + LOGO +
     "<span>Espoon Leppäversot<small>Partiolippukunta</small></span></a>";
 
   function navItems() {

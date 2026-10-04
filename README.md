@@ -16,7 +16,7 @@ assets/css/style.css      All styles; colours and fonts are CSS variables at the
 assets/js/layout.js       Shared header + footer (written into every page)
 assets/js/main.js         Mobile menu, scroll reveal, header hairline, photo lightbox
 assets/fonts/             Fraunces + Nunito Sans (SIL Open Font License)
-assets/img/               Photos (full + -800 variants) and favicon
+assets/img/               Photos (full + -800 variants), logo.svg (official ELV logo) and favicon
 ```
 
 Each page lives in its own folder so the old URLs (`/ajankohtaista`, `/ilmoittaudu`, …) keep working.

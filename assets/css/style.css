@@ -231,8 +231,7 @@ a:hover { text-decoration-color: currentColor; }
   letter-spacing: -.01em;
   line-height: 1;
 }
-.brand svg { width: 1.9rem; height: 1.9rem; flex: none; color: var(--accent); transition: transform .6s var(--ease); }
-.brand:hover svg { transform: rotate(-10deg); }
+.brand__logo { width: auto; height: 2.6rem; flex: none; }
 .brand small {
   display: block;
   font-family: var(--font-body);
