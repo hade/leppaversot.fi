@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ajankohtaista – Espoon Leppäversot</title>
+  <meta name="description" content="Espoon Leppäversot kokoontuu maanantaisin klo 18–19.30 Valotalolla Matinkylässä. Ryhmissä on tilaa kaikissa ikäryhmissä.">
+  <meta name="theme-color" content="#f4f1ea">
+  <meta property="og:title" content="Ajankohtaista – Espoon Leppäversot">
+  <meta property="og:description" content="Espoon Leppäversot kokoontuu maanantaisin klo 18–19.30 Valotalolla Matinkylässä. Ryhmissä on tilaa kaikissa ikäryhmissä.">
+  <meta property="og:image" content="../assets/img/jarvi.jpg">
+  <meta property="og:locale" content="fi_FI">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/nunito-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body data-page="ajankohtaista">
+  <script src="../assets/js/layout.js" data-part="header"></script>
+
+  <main id="main">
+    <section class="hero hero--page" style="--focus: center 40%">
+      <div class="hero__frame">
+        <img class="hero__bg" src="../assets/img/jarvi.jpg" srcset="../assets/img/jarvi-800.jpg 800w, ../assets/img/jarvi.jpg 1600w" sizes="100vw" alt="Aurinko laskee metsäjärven ylle, partiolaiset soutavat veneellä" fetchpriority="high">
+        <div class="hero__content">
+          <p class="kicker">Ajankohtaista</p>
+          <h1>Mitä on tulossa?</h1>
+          <p class="hero__tagline">Kokoontumiset, retket ja leirit – näin partiovuosi etenee.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap meet">
+        <div class="reveal">
+          <p class="kicker">Uusia partiolaisia</p>
+          <h2>Ryhmissä on tilaa</h2>
+          <p class="lead">Espoon Leppäversoihin otetaan uusia lapsia ja aikuisia. Ryhmissä on tilaa kaikissa ikäryhmissä.</p>
+          <p>Ryhmät kokoontuvat maanantaisin klo 18–19.30 Valotalolla Matinkylässä ja lähialueen luonnossa. Vuoden aikana käydään myös päivä- ja yöretkillä sekä partiotapahtumissa. Partiovuoden kruunaa kesäleiri.</p>
+          <div class="actions">
+            <a class="btn" href="../ilmoittaudu/">Ilmoittaudu mukaan <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+        <aside class="card reveal" style="--delay: .1s" aria-labelledby="kokoontumiset">
+          <span class="badge">Tilaa kaikissa ikäryhmissä</span>
+          <h3 id="kokoontumiset" style="margin-top: 1rem">Kokoontumiset</h3>
+          <dl class="info">
+            <div><dt>Milloin</dt><dd>Maanantaisin klo 18–19.30</dd></div>
+            <div><dt>Missä</dt><dd>Valotalo, Matinkartanontie 13 A, Espoo</dd></div>
+            <div><dt>Ja lisäksi</dt><dd>Lähialueen luonnossa</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0" aria-labelledby="partiovuosi">
+      <div class="wrap wrap--narrow">
+        <div class="reveal">
+          <p class="kicker">Partiovuosi</p>
+          <h2 id="partiovuosi">Polku läpi vuoden</h2>
+        </div>
+        <!--
+          Ajankohtaisia tapahtumia voi lisätä tähän listaan kopioimalla <li>-elementin.
+          Päivämäärälliseen tapahtumaan käytä esim.:
+            <li><time datetime="2026-11-14">La 14.11.</time><h3>Yöretki</h3><p>Lisätietoa…</p></li>
+        -->
+        <ol class="trail">
+          <li class="reveal"><span class="when">Elo–syyskuu</span><h3>Partiotoiminta alkaa</h3><p>Uusi partiovuosi käynnistyy elo–syyskuun vaihteessa. Nyt on paras aika liittyä mukaan!</p></li>
+          <li class="reveal"><span class="when">Joka maanantai</span><h3>Viikkokokoukset</h3><p>Ryhmät kokoontuvat klo 18–19.30 Valotalolla ja lähialueen luonnossa.</p></li>
+          <li class="reveal"><span class="when">Syksystä kevääseen</span><h3>Päivä- ja yöretket</h3><p>Retkillä harjoitellaan erätaitoja, laitetaan ruokaa nuotiolla ja yövytään tulilla.</p></li>
+          <li class="reveal"><span class="when">Pitkin vuotta</span><h3>Partiotapahtumat</h3><p>Tavataan partiolaisia muista lippukunnista ja koetaan yhdessä.</p></li>
+          <li class="reveal"><span class="when">Kesä</span><h3>Kesäleiri</h3><p>Partiovuoden kruunaa kesäleiri.</p></li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="../assets/js/layout.js" data-part="footer"></script>
+</body>
+</html>
