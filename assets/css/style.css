@@ -47,14 +47,15 @@
   --cream: #f4f1ea;
   --brass: #a8834a;
 
-  --bg: var(--cream);
-  --surface: #faf8f3;
-  --ink: #1f2622;
-  --ink-soft: #57615a;
-  --line: #d9d5c9;
-  --heading: var(--pine);
-  --accent: var(--moss);
-  --link: var(--pine);
+  /* one dark green-black theme for every visitor, regardless of OS setting */
+  --bg: #111915;
+  --surface: #17221c;
+  --ink: #e4e8df;
+  --ink-soft: #a9b3a8;
+  --line: #2a3a31;
+  --heading: #e6ebdc;
+  --accent: var(--sage);
+  --link: var(--lichen);
 
   --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --font-body: "Nunito Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -66,21 +67,7 @@
   --header-h: 4.75rem;
   --ease: cubic-bezier(.2, .7, .2, 1);
 
-  color-scheme: light;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #111915;
-    --surface: #17221c;
-    --ink: #e4e8df;
-    --ink-soft: #a9b3a8;
-    --line: #2a3a31;
-    --heading: #e6ebdc;
-    --accent: var(--sage);
-    --link: var(--lichen);
-    color-scheme: dark;
-  }
+  color-scheme: dark;
 }
 
 /* 3. Base ---------------------------------------------------------------- */
@@ -392,10 +379,9 @@ a:hover { text-decoration-color: currentColor; }
 .btn--light:hover { --btn-bg: #fff; --btn-line: #fff; }
 .btn--small { padding: .5rem 1rem; font-size: .85rem; }
 
-@media (prefers-color-scheme: dark) {
-  .btn { --btn-bg: var(--lichen); --btn-ink: var(--pine-deep); }
-  .btn:hover { --btn-bg: #dfe6d5; --btn-line: #dfe6d5; }
-}
+/* buttons on the dark theme: light lichen fill so they stand out */
+.btn { --btn-bg: var(--lichen); --btn-ink: var(--pine-deep); }
+.btn:hover { --btn-bg: #dfe6d5; --btn-line: #dfe6d5; }
 
 .card {
   background: var(--surface);
