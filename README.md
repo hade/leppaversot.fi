@@ -33,10 +33,12 @@ Each page lives in its own folder so the old URLs (`/ajankohtaista`, `/ilmoittau
 ## Local preview
 
 ```
-python3 -m http.server 8000
+python3 serve.py
 ```
-then open http://localhost:8000/.
+then open http://localhost:8000/ (another port: `python3 serve.py 8080`).
+
+`serve.py` is a small live-reload server using only Python's standard library: CSS changes are swapped in without a reload, other changes reload the page and restore the scroll position. Missing pages get `404.html`, like on the host. `python3 -m http.server 8000` still works for a plain preview.
 
 ## Deploy
 
-Upload the repository contents (except `.git`) to any static host (GitHub Pages, Netlify, Cloudflare Pages, a plain web server). Configure the host to serve `404.html` for missing pages.
+Upload the repository contents (except `.git` and `serve.py`) to any static host (GitHub Pages, Netlify, Cloudflare Pages, a plain web server). Configure the host to serve `404.html` for missing pages.
