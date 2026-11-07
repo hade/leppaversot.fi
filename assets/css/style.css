@@ -693,6 +693,12 @@ a:hover { text-decoration-color: currentColor; }
 }
 
 /* Advent calendar pages (kalenteri/, calendar/) */
+/* the bright, busy illustration needs a deeper scrim behind the hero text */
+.hero--illustration .hero__frame::before {
+  background:
+    linear-gradient(180deg, rgb(20 42 33 / .25) 0%, rgb(20 42 33 / .15) 35%, rgb(20 42 33 / .85) 100%),
+    linear-gradient(90deg, rgb(20 42 33 / .7) 0%, rgb(20 42 33 / .1) 70%);
+}
 .guide h2 { font-size: clamp(1.6rem, 3.2vw, 2.2rem); margin-top: clamp(3rem, 6vw, 4rem); }
 .guide ul { padding-left: 1.2rem; margin: 0 0 1.1em; }
 .guide li::marker { color: var(--sage); }
