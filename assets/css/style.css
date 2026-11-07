@@ -692,6 +692,68 @@ a:hover { text-decoration-color: currentColor; }
   align-items: start;
 }
 
+/* Advent calendar pages (kalenteri/, calendar/) */
+.guide h2 { font-size: clamp(1.6rem, 3.2vw, 2.2rem); margin-top: clamp(3rem, 6vw, 4rem); }
+.guide ul { padding-left: 1.2rem; margin: 0 0 1.1em; }
+.guide li::marker { color: var(--sage); }
+
+.tiers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1.75rem 0 2rem;
+  border-block: 1px solid var(--line);
+}
+.tiers div { padding: 1.4rem 1rem 1.3rem 0; }
+.tiers div + div { padding-left: clamp(1rem, 3vw, 1.75rem); border-left: 1px solid var(--line); }
+.tiers strong {
+  display: block;
+  font: 400 clamp(2rem, 5vw, 2.8rem)/1 var(--font-display);
+  color: var(--heading);
+  font-variant-numeric: lining-nums;
+}
+.tiers span { display: block; margin-top: .5rem; color: var(--ink-soft); font-size: .95rem; line-height: 1.4; }
+
+.mobilepay {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: clamp(1.25rem, 4vw, 2.25rem);
+  align-items: center;
+  margin: 1.75rem 0 2rem;
+}
+.mobilepay img {
+  width: clamp(9rem, 30vw, 12rem);
+  padding: .6rem;
+  border-radius: var(--radius);
+  background: #fff;
+}
+.mobilepay .info { gap: 1rem; }
+.mobilepay p { margin: 0; color: var(--ink-soft); font-size: 1rem; }
+
+.pay { margin: 1.75rem 0 2rem; }
+.pay .info { grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
+.pay ul { margin: .25rem 0 0; }
+
+.message {
+  margin: .5rem 0 1rem;
+  padding: .9rem 1.1rem;
+  border-left: 2px solid var(--sage);
+  background: var(--surface);
+  border-radius: 0 .6rem .6rem 0;
+  font-variant-numeric: tabular-nums;
+  color: var(--heading);
+}
+
+.note {
+  margin-top: 2rem;
+  padding: 1.1rem 1.3rem;
+  border: 1px solid var(--brass);
+  border-radius: var(--radius);
+  color: var(--ink);
+}
+.note strong { color: var(--brass); }
+
+.break-all { overflow-wrap: anywhere; }
+
 /* 9. Footer -------------------------------------------------------------- */
 .site-footer {
   margin-top: clamp(3rem, 7vw, 5rem);
@@ -829,4 +891,5 @@ a:hover { text-decoration-color: currentColor; }
   .gallery { grid-template-columns: 1fr; }
   .brand small { display: none; }
   .steps > li { grid-template-columns: 3rem 1fr; }
+  .mobilepay { grid-template-columns: 1fr; justify-items: start; }
 }

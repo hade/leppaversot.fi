@@ -10,6 +10,8 @@ ajankohtaista/index.html  Ajankohtaista
 ilmoittaudu/index.html    Ilmoittautuminen
 varusteet/index.html      Varusteet
 yhteystiedot/index.html   Yhteystiedot
+kalenteri/index.html      Adventtikalenteri (not in the menu, linked directly)
+calendar/index.html       Advent Calendar, English version of kalenteri/ (not in the menu)
 home/index.html           Redirect from the old Google Sites URL /home → /
 404.html                  Not-found page (uses root-absolute asset paths)
 assets/css/style.css      All styles; colours and fonts are CSS variables at the top
